@@ -40,10 +40,11 @@ clf.fit(x_train, y_train)
 
 app = FastAPI()
 @app.post("/predict")
-async def pred(x_test):
+async def pred():
     try :
         prediction = clf.predict(x_test)
         result = (acs(prediction, y_test))
+        print(result)
         return {"prediction": result}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
