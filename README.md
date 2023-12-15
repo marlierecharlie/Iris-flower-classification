@@ -25,3 +25,4 @@ The dataset for this project originates from the [UCI Machine Learning Repositor
 - The program then divides the dataset into training and testing samples in 80:20 ratio randomly using `train_test_learn()` function available in `sklearn` module.
 - The training sample space is used to train the program and predictions are made on the testing sample space.
 - Accuracy score is then calculated by comparing with the correct results of the training dataset.
+# iricharlie
